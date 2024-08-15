@@ -1,9 +1,12 @@
-package com.porto.unit.squad18fabtec.repository;
+package com.dm.api.repository;
 
-import com.porto.unit.squad18fabtec.model.Usuario;
+import com.dm.api.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario,Integer> {
+    Optional<Usuario> findByLogin(String login);
 }

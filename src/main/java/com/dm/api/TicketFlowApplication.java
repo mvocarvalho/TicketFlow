@@ -1,13 +1,13 @@
-package com.porto.unit.squad18fabtec;
+package com.dm.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Squad18FabtecApplication {
+public class TicketFlowApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Squad18FabtecApplication.class, args);
+		SpringApplication.run(TicketFlowApplication.class, args);
 	}
 
 }

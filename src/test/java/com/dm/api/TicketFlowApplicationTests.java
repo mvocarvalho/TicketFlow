@@ -1,10 +1,10 @@
-package com.porto.unit.squad18fabtec;
+package com.dm.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Squad18FabtecApplicationTests {
+class TicketFlowApplicationTests {
 
 	@Test
 	void contextLoads() {

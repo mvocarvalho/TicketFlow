@@ -1,5 +1,8 @@
 -- Inserção de dados na tabela Usuario
-INSERT INTO Usuario (id, login, senha) VALUES
-(1, 'fulano@email.com', 'senha123'),
-(2, 'ciclano@email.com', 'senha456'),
-(3, 'beltrano@email.com', 'senha789');
+INSERT INTO Usuario (login, senha) VALUES
+('fulano@email.com', 'senha123'),
+('ciclano@email.com', 'senha456'),
+('beltrano@email.com', 'senha789');
+
+--Rollback
+--DELETE FROM Usuario WHERE login in ('fulano@email.com','ciclano@email.com','beltrano@email.com');

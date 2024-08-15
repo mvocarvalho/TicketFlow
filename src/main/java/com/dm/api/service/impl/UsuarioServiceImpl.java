@@ -1,10 +1,10 @@
-package com.porto.unit.squad18fabtec.service.impl;
+package com.dm.api.service.impl;
 
 import java.util.List;
 import java.util.Optional;
-import com.porto.unit.squad18fabtec.model.Usuario;
-import com.porto.unit.squad18fabtec.repository.UsuarioRepository;
-import com.porto.unit.squad18fabtec.service.UsuarioService;
+import com.dm.api.model.Usuario;
+import com.dm.api.repository.UsuarioRepository;
+import com.dm.api.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario criar(Usuario usuario) {
-        Usuario usu = usuarioRepository.findById(usuario.getId()).orElse(null);
+        Usuario usu = usuarioRepository.findByLogin(usuario.getLogin()).orElse(null);
         if(usu == null){
             return usuarioRepository.save(usuario);
         }
@@ -30,7 +30,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario atualizar(Usuario usuario) {
-        Usuario usu = usuarioRepository.findById(usuario.getId()).orElse(null);
+        Usuario usu = usuarioRepository.findByLogin(usuario.getLogin()).orElse(null);
         if(usu != null){
             return usuarioRepository.save(usuario);
         }

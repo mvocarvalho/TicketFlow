@@ -1,9 +1,8 @@
-package com.porto.unit.squad18fabtec.controller;
+package com.dm.api.controller;
 
 import java.util.List;
-import com.porto.unit.squad18fabtec.model.Usuario;
-import com.porto.unit.squad18fabtec.service.UsuarioService;
-import jakarta.websocket.server.PathParam;
+import com.dm.api.model.Usuario;
+import com.dm.api.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

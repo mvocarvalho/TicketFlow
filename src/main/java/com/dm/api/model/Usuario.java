@@ -1,11 +1,10 @@
-package com.porto.unit.squad18fabtec.model;
+package com.dm.api.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.LocalDate;
 
 @Entity
 @Getter
@@ -14,6 +13,7 @@ import lombok.Setter;
 public class Usuario {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(name = "login", length = 60)
@@ -21,5 +21,8 @@ public class Usuario {
 
     @Column(name = "senha", length = 60)
     private String senha;
+
+    @Column(name = "dataCadastro")
+    private LocalDate dataCadastro;
 
 }

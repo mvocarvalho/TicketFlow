@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.porto.unit</groupId>
-	<artifactId>squad-18-fabtec</artifactId>
+	<artifactId>ticket-flow</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>squad-18-fabtec</name>
-	<description>Projeto Desafio Fabtec</description>
+	<name>ticket-flow</name>
+	<description>Projeto Ticket Flow</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
